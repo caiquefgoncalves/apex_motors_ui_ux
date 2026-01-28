@@ -1,0 +1,563 @@
+@media screen and (max-width: 374px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .logo-texto {
+        font-size: 1.1rem;
+    }
+    
+    .titulo-hero {
+        font-size: 1.8rem;
+    }
+    
+    .subtitulo-hero {
+        font-size: 1rem;
+    }
+    
+    .botoes-hero {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .botoes-hero .botao {
+        width: 100%;
+    }
+    
+    .placeholder-carro {
+        height: 200px;
+    }
+    
+    .placeholder-texto i {
+        font-size: 2rem;
+    }
+    
+    .placeholder-texto p {
+        font-size: 1rem;
+    }
+    
+    .grade-veiculos {
+        grid-template-columns: 1fr;
+    }
+    
+    .caracteristicas-veiculo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .grade-recursos {
+        grid-template-columns: 1fr;
+    }
+    
+    .conteudo-sobre {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .conteudo-contato {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .estatisticas {
+        grid-template-columns: 1fr;
+    }
+    
+    .grade-rodape {
+        grid-template-columns: 1fr;
+    }
+    
+    .rodape-inferior {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .logo-texto {
+        font-size: 1.2rem;
+    }
+    
+    .titulo-hero {
+        font-size: 2rem;
+    }
+    
+    .subtitulo-hero {
+        font-size: 1.1rem;
+    }
+    
+    .botoes-hero {
+        flex-wrap: wrap;
+    }
+    
+    .botoes-hero .botao {
+        min-width: 160px;
+    }
+    
+    .placeholder-carro {
+        height: 220px;
+    }
+    
+    .grade-veiculos {
+        grid-template-columns: 1fr;
+    }
+    
+    .grade-recursos {
+        grid-template-columns: 1fr;
+    }
+    
+    .conteudo-sobre {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .conteudo-contato {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .estatisticas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .logo-texto {
+        font-size: 1.3rem;
+    }
+    
+    .titulo-hero {
+        font-size: 2.2rem;
+    }
+    
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .botoes-hero {
+        justify-content: center;
+    }
+    
+    .placeholder-carro {
+        height: 250px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .grade-veiculos {
+        grid-template-columns: 1fr;
+    }
+    
+    .grade-recursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .conteudo-sobre {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .conteudo-contato {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .estatisticas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .botoes-hero {
+        justify-content: center;
+    }
+    
+    .placeholder-carro {
+        height: 300px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .grade-veiculos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grade-recursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .conteudo-sobre {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .conteudo-contato {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+
+    .menu-navegacao {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        gap: 0;
+        transition: left var(--transicao-normal);
+        z-index: 999;
+        box-shadow: var(--sombra-forte);
+    }
+    
+    .menu-navegacao.ativo {
+        left: 0;
+    }
+    
+    .item-menu {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .link-menu {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--cor-borda);
+    }
+    
+    .link-menu.ativo::after {
+        display: none;
+    }
+    
+    .link-menu.ativo {
+        background-color: var(--cor-cinza-clara);
+    }
+    
+    .hamburguer {
+        display: flex;
+    }
+    
+    .hamburguer.ativo .barra:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .hamburguer.ativo .barra:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburguer.ativo .barra:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        max-width: 1000px;
+    }
+    
+    .hero .container {
+        gap: 30px;
+    }
+    
+    .titulo-hero {
+        font-size: 2.5rem;
+    }
+    
+    .placeholder-carro {
+        height: 280px;
+    }
+    
+    .grade-veiculos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .conteudo-sobre {
+        gap: 40px;
+    }
+    
+    .conteudo-contato {
+        gap: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero .container {
+        gap: 50px;
+    }
+    
+    .titulo-hero {
+        font-size: 3.5rem;
+    }
+    
+    .subtitulo-hero {
+        font-size: 1.3rem;
+    }
+    
+    .placeholder-carro {
+        height: 350px;
+        max-width: 600px;
+    }
+    
+    .grade-veiculos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .grade-recursos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .container {
+        max-width: 2000px;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    .botao {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .hero {
+        padding: 180px 0 100px;
+    }
+    
+    .titulo-hero {
+        font-size: 4.5rem;
+    }
+    
+    .subtitulo-hero {
+        font-size: 1.5rem;
+    }
+    
+    .placeholder-carro {
+        height: 450px;
+        max-width: 800px;
+    }
+    
+    .placeholder-texto i {
+        font-size: 4rem;
+    }
+    
+    .placeholder-texto p {
+        font-size: 1.5rem;
+    }
+    
+    .secao-preenchimento {
+        padding: 120px 0;
+    }
+    
+    .grade-veiculos {
+        gap: 40px;
+    }
+    
+    .imagem-veiculo {
+        height: 280px;
+    }
+    
+    .nome-veiculo {
+        font-size: 1.8rem;
+    }
+    
+    .preco {
+        font-size: 2rem;
+    }
+    
+    .grade-recursos {
+        gap: 40px;
+    }
+    
+    .icone-recurso {
+        font-size: 3rem;
+    }
+    
+    .conteudo-sobre {
+        gap: 80px;
+    }
+    
+    .placeholder-imagem {
+        height: 400px;
+        font-size: 4rem;
+    }
+    
+    .placeholder-imagem p {
+        font-size: 1.2rem;
+    }
+    
+    .numero-estatistica {
+        font-size: 3.5rem;
+    }
+    
+    .rotulo-estatistica {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .secao-preenchimento {
+        padding: 60px 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .titulo-hero {
+        font-size: 2rem;
+    }
+    
+    .subtitulo-hero {
+        font-size: 1.1rem;
+    }
+    
+
+    .menu-navegacao {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        gap: 0;
+        transition: left var(--transicao-normal);
+        z-index: 999;
+        box-shadow: var(--sombra-forte);
+    }
+    
+    .menu-navegacao.ativo {
+        left: 0;
+    }
+    
+    .item-menu {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .link-menu {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--cor-borda);
+    }
+    
+    .link-menu.ativo::after {
+        display: none;
+    }
+    
+    .link-menu.ativo {
+        background-color: var(--cor-cinza-clara);
+    }
+    
+    .hamburguer {
+        display: flex;
+    }
+    
+    .hamburguer.ativo .barra:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .hamburguer.ativo .barra:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburguer.ativo .barra:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .item-contato {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .icone-contato {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 40px;
+    }
+    
+    .menu-navegacao {
+        height: calc(100vh - 70px);
+        padding-top: 20px;
+        overflow-y: auto;
+    }
+    
+    .item-menu {
+        margin-bottom: 5px;
+    }
+    
+    .link-menu {
+        padding: 10px 20px;
+    }
+    
+    .placeholder-carro {
+        height: 200px;
+    }
+}
+
+
+
